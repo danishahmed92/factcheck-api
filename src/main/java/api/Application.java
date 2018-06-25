@@ -28,6 +28,8 @@ public class Application extends SpringBootServletInitializer {
             public void addCorsMappings(CorsRegistry registry) {
                 System.out.println("allow cross origins");
                 registry.addMapping("/**").allowedOrigins("http://localhost:4200");
+                registry.addMapping("/**").allowedOrigins("http://131.234.28.204:4200");
+
             }
         };
     }
